@@ -1,0 +1,356 @@
+// #ifndef APP-PLUS-NVUE
+// .uni-page-head__title {
+//   font-weight: 36rpx !important;
+//   font-weight: bold;
+// }
+.uni-input-input {
+    color: #141e2a;
+    font-size: 32rpx;
+  }
+  .po-sticky {
+    position: sticky;
+    z-index: 11;
+    top: calc(44px + var(--status-bar-height));
+  }
+  .text-es {
+    display: block;
+    flex: 1;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  // 选择按钮旋转
+  .u-input__right-icon--select--reverse {
+     transform: rotate(90deg) !important;
+  }
+  .u-input__right-icon--select {
+    transition: transform .1s, -webkit-transform .1s !important;
+  }
+  //红色文字
+  .error-text {
+    color: #F54040 !important;
+  }
+  // from表单公共样式
+  .u-form-item {
+    /deep/.u-form-item--left {
+      min-width:200rpx !important;
+    }
+    /deep/.u-form-item--right {
+      flex: inherit;
+      display:flex;
+      align-items:center;
+    }
+    /deep/ .u-input {
+      text-align: right !important;
+      // margin-top:50rpx;
+    }
+    /deep/ uni-input {
+      height: auto;
+    }
+    .u-form-item--right__content__slot {
+      text {
+        font-size: 32rpx;
+      }
+    }
+    .slot-btn {
+      width: 200rpx;
+      height: 200rpx;
+      margin-bottom: 20rpx;
+      display: flex;
+      padding: 56rpx 0 46rpx 0;
+      justify-content: center;
+      align-items: center;
+      background: #f6f7f8;
+      border-radius: 12rpx;
+      flex-direction: column;
+      text {
+        font-size: 24rpx;
+        font-family: PingFang SC;
+        font-weight: 400;
+        line-height: 33rpx;
+        color: #a4a8ac;
+        margin-top: 16rpx;
+      }
+    }
+    /deep/ .u-list-item {
+      margin: 0 12rpx 12rpx 0;
+      overflow: inherit;
+    }
+    /deep/.u-delete-icon {
+      top: -10rpx;
+      right: -10rpx;
+    }
+    /deep/.u-list-item:nth-child(3n) {
+      margin-right: 0 !important;
+    }
+    //文字溢出隐藏  intext-es
+    .input-textes {
+          .uni-input-input {
+            white-space:nowrap;
+            text-overflow:ellipsis
+          }
+      }
+  }
+  .form-maxwidth {
+    /deep/.u-form-item--right {
+      max-width: 400rpx;
+    }
+  }
+  //针对表单验证 最后一个元素 没有border 提示问题
+  /deep/.form-boyz:after {
+    border-color: #ffffff;
+  }
+  /deep/.u-input__textarea {
+    text-align: left !important;
+    height: 169rpx !important;
+    background-color: #f6f7f8;
+    border-radius: 12rpx;
+    margin-bottom: 20rpx;
+  }
+  /deep/.u-form-item--left__content--required {
+    padding-top: 0;
+  }
+  .textNumber {
+    position: absolute;
+  font-size: 10rpx !important;
+  line-height: 15px;
+  color: #A4A8AC;
+    bottom: 20rpx;
+    right: 18rpx;
+  }
+  /deep/ .u-input {
+    align-items: center;
+  }
+  /deep/.u-input__input {
+    // min-height: auto !important;
+    font-size: 12rpx !important;
+  }
+  
+  // 图标默认颜色
+  .u-icon__icon {
+    color: #bdc0c4;
+  }
+  // 弹框公共样式
+  .u-model__content {
+    display: flex;
+    justify-content: center;
+  }
+  .u-model__title {
+    padding-top: 35rpx !important;
+    font-size: 36rpx !important;
+    font-family: PingFang SC;
+    font-weight: bold !important;
+    line-height: 50rpx !important;
+    color: #141e2a !important;
+  }
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  //两个按钮宽度适配
+  .flex-is {
+    .u-btn:nth-child(2) {
+      margin-left: 20rpx;
+    }
+    .u-btn:nth-child(3) {
+      margin-left: 20rpx;
+    }
+    .u-btn {
+      flex: 1 !important;
+    }
+  }
+  // 三个按钮适配问题
+  .flex-ti {
+    .u-btn:nth-child(1) {
+      flex: 1 !important;
+    }
+    .u-btn:nth-child(2) {
+      flex: 1 !important;
+      margin-left: 20rpx;
+    }
+    .u-btn:nth-child(3) {
+      width: 308rpx !important;
+      margin-left: 20rpx;
+    }
+  }
+  /deep/.u-model__content__message {
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: 20rpx;
+    margin-top: 18rpx !important;
+    padding: 10rpx 20rpx !important;
+    font-size: 14rpx;
+    color: #141e2a !important;
+    text-align: left !important;
+  }
+  .u-model__footer__button {
+    border: 1px solid #e2e2e2;
+    margin-left: -1px;
+    // font-weight: bold;
+  }
+  .u-calendar__action {
+    padding: 0 !important;
+  }
+  .u-calendar__bottom__choose {
+    height: auto !important;
+  }
+  .u-collapse-content {
+    overflow: auto;
+  }
+  // 原生弹框样式
+  /deep/.uni-actionsheet__cell {
+    color: #3B87F7 !important;
+  }
+  // .uni-actionsheet__menu {
+  // .uni-actionsheet__cell:nth-child(1) {
+  //   font-size: 26rpx !important;
+  //   color: #818282 !important;
+  //   padding: 14rpx 0 !important;
+  // }
+  // }
+  /deep/.u-tips {
+    padding: 14rpx 0 !important;
+  }
+  /deep/.u-gab {
+    height: 20rpx !important;
+  }
+  .ttextn {
+    font-weight: bold;
+    font-size: 34rpx;
+    color: #141e2a;
+  }
+  .nostart {
+    color: #B4B7B9;
+    background-color: #B4B7B9;
+  }
+  .pri {
+    color: #3b87f7;
+    background-color: #3b87f7;
+  }
+  .warn {
+    color: #f99421;
+    background-color: #f99421;
+  }
+  .sting {
+    color: #24c5d8;
+    background-color: #24c5d8;
+  }
+  .succ {
+    color: #2abe96;
+    background-color: hsl(164, 64%, 45%);
+  }
+  .danger {
+    color:#F13629;
+    background-color: #F13629;
+  }
+  .nostart-text {
+    color: #B4B7B9;
+  }
+  .pri-text {
+    color: #3b87f7 !important;
+  }
+  .warn-text {
+    color: #f99421;
+  }
+  .sting-text {
+    color: #24c5d8;
+  }
+  .succ-text {
+    color: #2abe96;
+  }
+  .danger-text {
+    color:#F13629 !important;
+  }
+  // 状态标注圆
+  .pri-zero {
+    display: block;
+    width: 11rpx;
+    height: 11rpx;
+    border-radius: 50%;
+    background-color: #3b87f7;
+  }
+  .warn-zero {
+    display: block;
+    width: 11rpx;
+    height: 11rpx;
+    border-radius: 50%;
+    background-color: #f99421;
+  }
+  .ing-zero {
+    display: block;
+    width: 11rpx;
+    height: 11rpx;
+    border-radius: 50%;
+    background-color: #24c5d8;
+  }
+  .succ-zero {
+    display: block;
+    width: 11rpx;
+    height: 11rpx;
+    border-radius: 50%;
+    background-color: #2abe96;
+  }
+  .error-zero {
+    width: 11rpx;
+    display: block;
+    height: 11rpx;
+    border-radius: 50%;
+    background-color: #F13629;
+  }
+  .info-zero {
+    width: 11rpx;
+    display: block;
+    height: 11rpx;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+  }
+  //状态标注 框
+  .pri-status {
+    background-color: #3b87f7;
+    font-size: 24rpx;
+    line-height: 35rpx;
+    color: #FFFFFF;
+    padding: 0rpx 11rpx;
+    width: fit-content;
+  }
+  .warn-status {
+    background-color: #f99421;
+    font-size: 24rpx;
+    line-height: 35rpx;
+    color: #FFFFFF;
+    padding: 0rpx 11rpx;
+    width: fit-content;
+  }
+  .succ-status {
+    background-color: #2abe96;
+    font-size: 24rpx;
+    line-height: 35rpx;
+    color: #FFFFFF;
+    padding: 0rpx 11rpx;
+    width: fit-content;
+  }
+  .error-status {
+    background-color: #F13629;
+    font-size: 24rpx;
+    line-height: 35rpx;
+    color: #FFFFFF;
+    padding: 0rpx 11rpx;
+    width: fit-content;
+  }
+  //无数据文字
+  .nolist {
+    line-height: 80rpx;
+    text-align: center;
+    color:#8F9192;
+  }
+  //扫码搜索框
+  .general-search {
+    background-color: #fff;
+    padding: 27rpx 42rpx;
+    box-sizing: border-box;
+    height: 110rpx;
+    display: flex;
+    align-items: center;
+  }
+  //  #endif 
