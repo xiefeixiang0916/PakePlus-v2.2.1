@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./web-view.js"></script>
+    <!--引入 element-ui 的样式，-->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"> -->
+    <link rel="stylesheet" href="./element.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script> -->
+    <script type="text/javascript" src="./vue.js"></script>
+    <!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script>-->
+     <script type="text/javascript" src="./element.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@form-create/element-ui/dist/form-create.min.js"></script> -->
+    <script type="text/javascript" src="./form-create.js"></script>
+    <title>填写</title>
+</head>
+
+<body>
+    <div id="app">
+        <form-create :rule="rule" :option="option"></form-create>
+    </div>
+</body>
+<script>
+    new Vue({
+        el: '#app',
+        components: {
+        },
+        data: function () {
+            return {
+                rule: [],
+                option: {},
+                perview: {},
+            }
+        },
+        created() {
+            
+        },
+        mounted() {
+            this.$nextTick(() => {
+                window.getVueMessage = (data) => {
+                    console.log('webview')
+                    var accInfo = data.text
+                    // console.log((eval("(" + accInfo + ")")).template_name)
+                    this.perview = eval("(" + accInfo + ")")
+                    this.rule = (eval("(" + accInfo + ")")).rule
+                    this.option = (eval("(" + accInfo + ")")).option
+                    this.option.onSubmit = (formData) => {
+                        let per = {
+                            ...this.perview,
+                            rule: this.rule,
+                            option: this.option
+                        }
+                        uni.postMessage({
+                            data: {
+                                msg: JSON.stringify(per)
+                            }
+                        });
+                    }
+
+                }
+            })
+        },
+        methods: {
+        }
+    })
+</script>
+
+</html>
