@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4503880 */
+  src: url('/static/iconfont/iconfont.woff2?t=1720144873477') format('woff2'),
+       url('/static/iconfont/iconfont.woff?t=1720144873477') format('woff'),
+       url('/static/iconfont/iconfont.ttf?t=1720144873477') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-write:before {
+  content: "\e7c2";
+}
+
+.icon-print:before {
+  content: "\e7c1";
+}
+
+.icon-ziyuanguanli2:before {
+  content: "\e7c0";
+}
+
+.icon-zanting:before {
+  content: "\e7bf";
+}
+
+.icon-yichang:before {
+  content: "\e7be";
+}
+
+.icon-tuzhi:before {
+  content: "\e7bd";
+}
+
+.icon-shenpijieshu:before {
+  content: "\e7bc";
+}
+
+.icon-saoma:before {
+  content: "\e7bb";
+}
+
+.icon-paidan:before {
+  content: "\e7ba";
+}
+
+.icon-jiancha:before {
+  content: "\e7b9";
+}
+
+.icon-huifu:before {
+  content: "\e7b8";
+}
+
+.icon-baojiajieshou:before {
+  content: "\e7b7";
+}
+
+.icon-a-yichang4:before {
+  content: "\e76c";
+}
+
+.icon-a-zu1686:before {
+  content: "\e797";
+}
+
+.icon-a-zu1687:before {
+  content: "\e798";
+}
+
+.icon-a-zu1689:before {
+  content: "\e799";
+}
+
+.icon-a-zu1690:before {
+  content: "\e79a";
+}
+
+.icon-a-zu1692:before {
+  content: "\e79b";
+}
+
+.icon-a-zu1685:before {
+  content: "\e79e";
+}
+
+.icon-a-zu65:before {
+  content: "\e79f";
+}
+
+.icon-a-zu66:before {
+  content: "\e7a0";
+}
+
+.icon-a-zu1812:before {
+  content: "\e7a3";
+}
+
+.icon-a-zu39:before {
+  content: "\e7a6";
+}
+
+.icon-a-zu71:before {
+  content: "\e7a7";
+}
+
+.icon-a-zu70:before {
+  content: "\e7a8";
+}
+
+.icon-a-zu1679:before {
+  content: "\e7a9";
+}
+
+.icon-a-zu1575:before {
+  content: "\e7aa";
+}
+
+.icon-a-zu1784:before {
+  content: "\e7ab";
+}
+
+.icon-a-zu1785:before {
+  content: "\e7ac";
+}
+
+.icon-qianjin:before {
+  content: "\e7ad";
+}
+
+.icon-a-tishi1:before {
+  content: "\e7ae";
+}
+
+.icon-saoyisao:before {
+  content: "\e7af";
+}
+
+.icon-a-NFC1:before {
+  content: "\e7b2";
+}
+
+.icon-mima:before {
+  content: "\e7b4";
+}
+
+.icon-wode:before {
+  content: "\e7b5";
+}
+
+.icon-dianyuan:before {
+  content: "\e7b6";
+}
+
